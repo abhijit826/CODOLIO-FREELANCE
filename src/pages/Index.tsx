@@ -6,6 +6,7 @@ import { useSheetStore } from '@/store/useSheetStore';
 import { TopicCard } from '@/components/TopicCard';
 import { AddItemInput } from '@/components/AddItemInput';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const Index = () => {
   const { topics, addTopic, reorderTopics } = useSheetStore();
@@ -48,6 +49,7 @@ const Index = () => {
             </div>
 
             <div className="flex items-center gap-3 text-right">
+              <ThemeToggle />
               <div>
                 <div className="flex items-center gap-1.5 justify-end">
                   <Target className="h-4 w-4 text-primary" />
